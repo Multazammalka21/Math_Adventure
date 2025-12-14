@@ -53,10 +53,6 @@ def safe_print(text):
         print(text)
 
 def load_image(filename, size=None):
-    """
-    Function untuk load gambar dengan error handling
-    FIXED: Menggunakan path Asset/Image/ sesuai struktur folder Anda
-    """
     try:
         path = os.path.join('Asset', 'Image', filename)
         
@@ -380,7 +376,6 @@ def draw_game_over():
     screen.blit(restart, restart_rect)
 
 def draw_win_screen():
-    """Menggambar layar kemenangan"""
     draw_background()
     
     # Darken background
