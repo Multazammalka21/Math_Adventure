@@ -3,11 +3,6 @@ from Class.Character import Character
 
 
 class Player(Character):
-    """
-    Class Player mewarisi Character (Inheritance)
-    Mendemonstrasikan Encapsulation dengan private attributes
-    """
-    
     def __init__(self, name, x=100, y=400):
         super().__init__(name, health=100, x=x, y=y)
         self.__score = 0  # Private attribute

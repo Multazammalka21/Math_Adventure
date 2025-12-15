@@ -2,11 +2,6 @@
 from abc import ABC, abstractmethod
 
 class Character(ABC):
-    """
-    Class abstrak untuk semua karakter dalam game
-    Mendemonstrasikan Encapsulation dengan atribut protected
-    """
-    
     def __init__(self, name, health, x, y):
         self._name = name  # Protected attribute
         self.__health = health  # Private attribute (Encapsulation)
